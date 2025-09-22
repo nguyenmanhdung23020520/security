@@ -48,7 +48,7 @@ public class WebSecurityConfig {
                     .anyMatch(a -> a.getAuthority().equals("admin"))) {
                 response.sendRedirect("/admin");
             } else {
-                response.sendRedirect("/user");
+                response.sendRedirect("/hello");
             }
         };
     }
